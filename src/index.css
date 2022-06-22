@@ -1,13 +1,225 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+*{
+    font-family: Poppins, Sans-serif !important;
+    line-height: 27px !important;
+}
+.boton.btn {
+    border-radius: 28px 28px 28px 28px;
+    padding: 12px 35px;
+}
+.btn.btn-demo{
+    color: #fff;
+    background-color: #e30059;
+}
+.boton.btn.btn-product{
+    color: #fff;
+    background-color: #722a85;
+}
+input{
+    border-radius: 1rem !important;
+}
+.fd-c{
+    display: flex;
+    flex-direction: column;
+}
+.c-gris{
+    color: #878787 !important;
+}
+.c-black{
+    color: #171519;
+}
+h2{
+    font-size: 2rem !important;
+    line-height: 36px !important;
+    font-weight: 700 !important;
+}
+h3{
+    font-weight: 600 !important;
+}
+.fw-bold{
+    font-weight: 700 !important;
+
+}
+.bi-arrow-right-short path{
+    color: red;
+    font-weight: 800;
+}
+/* ---- navbar ----- */
+nav{
+    background-color: #171519;
+    position: sticky;
+    width: auto;
+    top: 0;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 99999;
+}
+nav .nav-link {
+    font-size: 1rem;
+    font-weight: 400;
+}
+nav .dropdown-toggle::after{
+    color: #e30059 
+}
+.dropdown-menu.show{
+    border-radius: 1rem;
+}
+nav .dropdown a{
+    text-decoration: none;
+    padding: auto 4rem;
+}
+nav .dropdown-menu li .dropdown-item.titulo p{
+    font-size: 18px;
+    line-height: 32px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+}
+nav .dropdown-menu li .dropdown-item .text-description-group {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+nav .dropdown-menu li .dropdown-item .text-description-group p{
+    color: #555 !important;
+}
+nav .dropdown-menu li .dropdown-item .text-description-group .bi-arrow-right-short{
+    margin: auto 0.5rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ----- FIN NAVBAR ----- */
+
+
+
+/* ---SECTION 1 ---- */
+.section1{
+    background-color: rgba(0,0,0,.39);
+    background-image: url(https://www.audienceview.com/wp-content/uploads/2021/10/Homepage-header.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section1 .section1-backgroud{
+    background-image: url(https://www.audienceview.com/wp-content/uploads/2021/03/component-_three-1.png);
+    background-position: top center;
+    opacity: .77;
+    transition: background .3s,border-radius .3s,opacity .3s;
+    min-height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section1 .section1-backgroud H1{
+    font-size: 43px;
+    font-weight: 600;
+}
+.section1 .section1-backgroud h2{
+    font-weight: 600;
+    color: #0a0000;
+    font-size: 23px !important;
+    font-weight: 600 !important;
+}
+.section1 .section1-backgroud .d-block{
+    width: 70%;
+}
+.section1 .section1-backgroud .section1-form {
+    background-color: #fdfFFBAD;
+    padding: 2rem;
+    border-radius: 3.5rem;
+}
+
+
+/* ---SECTION 2 ---- */
+
+.section2,
+.section4,
+.section6{
+    padding: 5rem 10rem 3rem;
+}
+.section2 .nav.nav-tabs {
+    margin-bottom: 5rem;
+}
+.section2 .section2-imagenes img.img1{
+    position: absolute;
+    left: 35rem;
+    width: 80px;
+    height: 111px;
+}
+.section2 .section2-imagenes img.img2,
+.section2 .section2-text h2{
+    margin-top: 4rem;
+    border-radius: 0.5rem;
+}
+.section2 .section2-imagenes .bi-circle-fill{
+    fill: #722a85;
+}
+
+.section2 .footer{
+    margin: 10rem auto;
+}
+.footer img{
+    padding-top: 3rem;
+    margin-left: -1rem;
+}
+
+/* --- SECTION 3 --- */
+.section3 .col-3{
+    height: 105px;
+}
+.section3 .col-3 img{
+    margin: 10%;
+    width: -webkit-fill-available;
+}
+.section3 .col-3 img.special {
+    margin: -3% 11% 11% 11%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* --- SECTION 5 --- */
+.section5{
+    background-color: #722a85;
+}
+
+.section6 .section6-container{
+    margin: auto 11rem;
+}
+
+.section7{
+    background-color: #f8f9f9;
+    padding: 5rem;
+}
+.carousel-item img{
+    border-radius: 1rem;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-color: black;
+}
+
+/* --- UNDERCONSTRUCTION --- */
+.underConstruction{
+    width: 100vw;
+}
+
+/* --- NOTFOUND --- */
+.notfound{
+    width: 30%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+/* --- ABOUT --- */
+.cardabout{
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- SWAPI APP --- */
+.swapi-spinner{
+    margin-left: auto;
+    margin-right: auto;
 }
